@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../main-style.css">
+    <link rel="stylesheet" href="../styles/reservation-style.css">
+    <title>Salté Vacation House | RESERVATION</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/Logo.png" alt="Logo"></a>
+            </div>
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="villa.html">Villas</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+            <a href="reservation.html" class="action_btn">Book Now</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="villa.html">Villas</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="reservation.html" class="action_btn">Book Now</a></li>
+        </div>
+        <section id="hero">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <h1>RESERVATION</h1>
+        </section>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="wrapper-container">
+                <img src="../assets/Logo.png" alt="">
+                <h1>RESERVATION FORM</h1>
+                <p>
+                    Book Your Tropical Retreat
+
+                    Escape to paradise with our easy-to-use reservation form! Planning your dream staycation at our
+                    beach resort has never been simpler. Whether you're seeking a serene weekend getaway or a week
+                    of
+                    sun-soaked bliss, our reservation form ensures a seamless booking experience.
+
+                    Indulge in the luxury of beachfront accommodations, each thoughtfully designed for your comfort.
+                    Our
+                    reservation process allows you to customize your stay, choosing from a variety of room options
+                    and
+                    exclusive amenities to tailor your beachside escape.
+
+                    Let the gentle waves and golden sands be the backdrop to your perfect staycation. Simply fill
+                    out
+                    our reservation form, select your preferred dates, and get ready to immerse yourself in the
+                    tranquility of a beach resort experience like no other. Your tropical oasis awaits – reserve
+                    your
+                    slice of paradise today!
+                </p>
+                <div class="container">
+                    <div class="form-div">
+                        <form action="#" method="POST" class="neon-border">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address:</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Date:</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contact Number:</label>
+                                <input type="tel" id="contact" name="contact" required>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/saltevacationhouse"><i class="fab fa-facebook"></i></a>&nbsp;
+            <a href="airbnb.com/h/salte"><i class="fab fa-airbnb"></i></a>&nbsp;
+            <em><a href="mailto:susan@pacifictrails.com"><i class="fa-solid fa-envelope"></i></a></em>
+        </div>
+    </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>
